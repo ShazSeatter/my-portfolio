@@ -8,12 +8,8 @@ function App() {
 
   return (
     <>
-      <div>
-      <Navbar />
-      </div>
-      <div>
+        <Navbar />
         <Heropage />
-      </div>
     </>
   )
 }
