@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Heropage from './container/Heropage';
+import './App.css';
 
 
 
@@ -14,4 +15,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
