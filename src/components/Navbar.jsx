@@ -67,10 +67,10 @@ const Navbar = () => {
                         </div>
                     </nav> */}
 
-                    <nav className="md:block hidden sticky z-10">
-                        <div class="max-w-6xl mx-auto px-4">
-                            <div class="flex justify-between">
-                                <div classname="flex space-x-7">
+                    <nav className="md:block hidden sticky z-10 bg-black">
+                        <div className="max-w-6xl mx-auto px-4">
+                            <div className="flex justify-between">
+                                <div className="flex space-x-7">
                                     <a href="#main">
                                         <img src={logo_2} alt="" className="h-24 w-24 logo-img" />
                                     </a>
