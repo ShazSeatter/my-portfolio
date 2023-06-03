@@ -1,15 +1,7 @@
-.about-section-title {
-    font-family: 'Gloock', serif;
-    color: #daeaed;
-}
 
 .card-container {
     width: 50%;
     margin: 50px;
-}
-
-.p-text-color {
-    color: #daeaed; 
 }
 
 .background-div {
@@ -17,5 +9,6 @@
 }
 
 #about-me {
-    overflow: hidden;
+    overflow: auto;
+    overflow-y: hidden;
 }
