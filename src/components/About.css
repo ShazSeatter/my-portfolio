@@ -1,0 +1,21 @@
+.about-section-title {
+    font-family: 'Gloock', serif;
+    color: #daeaed;
+}
+
+.card-container {
+    width: 50%;
+    margin: 50px;
+}
+
+.p-text-color {
+    color: #daeaed; 
+}
+
+.background-div {
+    background: black;
+}
+
+#about-me {
+    overflow: hidden;
+}

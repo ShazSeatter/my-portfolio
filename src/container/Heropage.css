@@ -27,8 +27,9 @@ h2 {
 		width: 18px;
 		height: 18px;
 		border-left: 2px solid #fff;
-  	border-bottom: 2px solid #fff;
+  	    border-bottom: 2px solid #fff;
 		transform: rotate(-45deg);
+        overflow: hidden;
 	}
 }
 

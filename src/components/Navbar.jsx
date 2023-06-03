@@ -49,29 +49,11 @@ const Navbar = () => {
                 ''
                 )
             }
-                {/* <nav className="md:block hidden sticky z-10">
-                  
-                        <div className="flex justify-end m-10 space-x-4">
-                            <a href="#main" className="text-color">
-                                <p className="navbar-link">Home</p>
-                            </a>
-                            <a href="#main" className="text-color">
-                                <p className="navbar-link">About</p>
-                            </a>
-                            <a href="#main" className="text-color">
-                                <p className="navbar-link">Projects</p>
-                            </a>
-                            <a href="#main" className="text-color">
-                                <p className="navbar-link">Contact</p>
-                            </a>
-                        </div>
-                    </nav> */}
-
                     <nav className="md:block hidden sticky z-10 bg-black">
                         <div className="max-w-6xl mx-auto px-4">
                             <div className="flex justify-between">
                                 <div className="flex space-x-7">
-                                    <a href="#main">
+                                    <a href="#main" className="visible">
                                         <img src={logo_2} alt="" className="h-24 w-24 logo-img" />
                                     </a>
                                 </div>

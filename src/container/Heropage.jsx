@@ -21,8 +21,7 @@ const Heropage = () => {
                 <h2 className="md:text-[2rem]/[4.5rem] text-[1.5rem] text-color">Junior Software Developer</h2>
                 <button onClick={handleScroll}><div className="scroll"></div></button> 
             </div>
-
-        </div>
+            </div>
         <About />
       </>
     )
