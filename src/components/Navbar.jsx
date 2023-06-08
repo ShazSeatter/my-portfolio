@@ -84,8 +84,8 @@ const Navbar = () => {
         <div>
             <img className="h-20 w-20 hover:cursor-pointer" src={Logo_1} alt="Porfolio Logo" />
         </div>
-        <div onClick={() => setOpen(!open)}>
-        {open ? <CgClose className="h-6 w-6 mt-7 mr-7 hover:cursor-pointer"/> : <AiOutlineMenu className="h-6 w-6 mt-7 mr-7 hover:cursor-pointer"/> }
+        <div onClick={() => setOpen(!open)} className="lg:hidden md:hover:bg-gray-100 hover:cursor-pointer md:hover:rounded-lg p-3 m-4">
+        {open ? <CgClose className="h-6 w-6 "/> : <AiOutlineMenu className="h-6 w-6"/> }
         </div>
         </div>
         </>
