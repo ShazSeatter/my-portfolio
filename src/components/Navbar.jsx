@@ -10,6 +10,7 @@ import { DiCodeBadge } from "react-icons/di";
 
 import logo_2 from '../assets/logo_2.png'
 import Logo_1 from '../assets/Logo_1.png'
+import { Link } from "@mui/material";
 
 
 
@@ -18,6 +19,29 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [nav, setNav] = useState(false);
 
+
+    const Links = [
+        {name: "Home", href: "#"},
+        {name: "About", href: "#"},
+        {name: "Skills", href: "#"},
+        {name: "Project", href: "#"},
+        {name: "Contact", href: "#"},
+    ];
+
+    function Menu () {
+        return (<nav className="absolute lg:hidden">
+        <ul className="relative">
+            {
+            Links.map((link) => (
+                <li key={Link.name} className="ml-7 my-7">
+                    <a href={link.href}>{link.name}</a>
+                </li>
+            ))
+            }
+        </ul>
+    </nav>)
+    }
+    
     const handleNav = () => {
         setNav(!nav);
     }
@@ -80,13 +104,27 @@ const Navbar = () => {
         //             </nav>
         // </div>
         <>
-        <div className="max-w-full flex justify-between">
-        <div>
-            <img className="h-20 w-20 hover:cursor-pointer" src={Logo_1} alt="Porfolio Logo" />
-        </div>
-        <div onClick={() => setOpen(!open)} className="lg:hidden md:hover:bg-gray-100 hover:cursor-pointer md:hover:rounded-lg p-3 m-4">
-        {open ? <CgClose className="h-6 w-6 "/> : <AiOutlineMenu className="h-6 w-6"/> }
-        </div>
+        <div className="max-w-full">
+            <div className="flex justify-between">
+                <div>
+                    <img className="h-20 w-20 hover:cursor-pointer" src={Logo_1} alt="Porfolio Logo" />
+                </div>
+                <div onClick={() => setOpen(!open)} className="lg:hidden md:hover:bg-gray-100 hover:cursor-pointer md:hover:rounded-lg p-3 m-4">
+                    {open ? <CgClose className="h-6 w-6 "/> : <AiOutlineMenu className="h-6 w-6"/> }
+                </div>
+                    <ul className="lg:flex hidden">
+                        {Links.map((link) => (
+                            <li key={Link.name} className="ml-7 my-7 mr-7">
+                                <a href={link.href}><span>{link.name}</span></a>
+                            </li>))
+                        }
+                    </ul>
+            </div>
+            {open ?
+                <Menu />
+            : ('')}
+
+            
         </div>
         </>
     )
