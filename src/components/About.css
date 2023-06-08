@@ -1,7 +1,6 @@
 
 .card-container {
     width: 50%;
-    margin: 50px;
 }
 
 .background-div {
@@ -9,6 +8,5 @@
 }
 
 #about-me {
-    overflow: auto;
-    overflow-y: hidden;
+    overflow: hidden;
 }

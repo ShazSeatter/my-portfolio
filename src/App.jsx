@@ -1,6 +1,5 @@
-import { useState } from 'react';
-import Navbar from './components/Navbar';
 import Heropage from './container/Heropage';
+import Navbar from './components/Navbar';
 import './App.css';
 
 
