@@ -17,7 +17,7 @@ const Heropage = () => {
     return (
         <>
         <div className="relative h-screen">
-            <div className="absolute inset-0 flex flex-col items-center justify-center">
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-red-400">
                 <h1 className="md:text-[4rem]/[4.5rem] text-[2.5rem] main-heading text-color">Shazreen Seatter</h1>
                 <h2 className="md:text-[2rem]/[4.5rem] text-[1.5rem] sub-text text-color">Junior Software Developer</h2>
                 <button onClick={handleScroll}><div className="scroll"></div></button> 
