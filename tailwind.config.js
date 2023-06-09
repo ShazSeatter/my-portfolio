@@ -10,6 +10,10 @@ export default {
         Sintony: "Sintony, sans-serif",
         Gloock: "Gloock, serif"
     },
+    container: {
+      padding: '3.5rem',
+      center: true
+    }
   },
   plugins: [],
 

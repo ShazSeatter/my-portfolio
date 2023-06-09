@@ -27,7 +27,7 @@ const Navbar = () => {
         {name: "Project", href: "#"},
         {name: "Contact", href: "#"},
     ];
-    
+
     return (
         <>
         <nav className="max-w-full">
@@ -39,8 +39,8 @@ const Navbar = () => {
                     {open ? <CgClose className="h-6 w-6 "/> : <AiOutlineMenu className="h-6 w-6"/> }
                 </div>
                     <ul className={`bg-[#ffffff14] backdrop-blur-md  md:flex md:static md:pr-12 pr-28 fixed duration-500 ease-linear top-0 md:h-auto h-screen z-10 ${!open ? 'right-[-100%] ' : 'right-0'}`}>
-                        {Links.map((link) => (
-                            <li key={Link.name} className="ml-7 my-7 mr-7">
+                        {Links.map((link, index) => (
+                            <li key={index} className="ml-7 my-7 mr-7">
                                 <a href={link.href} className="font-Sintony"><span>{link.name}</span></a>
                             </li>))
                         }

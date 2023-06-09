@@ -8,8 +8,11 @@ function App() {
 
   return (
     <>
+    <section className="md:h-screen">
         <Navbar />
         <Heropage />
+    </section>
+   
     </>
   )
 }
