@@ -17,7 +17,7 @@ import { Link } from "@mui/material";
 const Navbar = () => {
 
     const [open, setOpen] = useState(false);
-    const [nav, setNav] = useState(false);
+  
 
 
     const Links = [

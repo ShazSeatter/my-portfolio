@@ -1,6 +1,5 @@
 import React, {useEffect} from "react";
 
-import About from '../components/About';
 import down from '../assets/down.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -41,7 +40,7 @@ const Heropage = () => {
             </h2>
             </div>
             <div>
-                <img src={down} alt="" className="h-10 w-10 cursor-pointer m-auto mt-28 scroll" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"/>
+                <img onClick={handleScroll} src={down} alt="" className="h-10 w-10 cursor-pointer m-auto mt-28 scroll" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"/>
             </div>
         </header>
       </>
