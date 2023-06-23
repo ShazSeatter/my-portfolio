@@ -14,10 +14,10 @@ function App() {
         <Navbar />
         <Heropage />
     </section>
-    <section className="h-screen">
+    <section>
         <About />
     </section>
-    <section>
+    <section className="h-screen">
         <Projects />
     </section>
     </>

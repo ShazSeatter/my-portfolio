@@ -11,3 +11,23 @@ body {
 * {
     box-sizing: border-box;
 }
+
+@layer components {
+    .section-headers {
+        @apply
+        md:text-[2rem]/[4rem] text-[2rem] font-Sintony
+    }
+    .link-btn {
+        @apply
+        h-8 w-8
+    }
+    .project-title {
+        @apply
+        font-Gloock text-[1.6rem]
+    }
+    .project-description {
+        @apply
+        mt-7 font-Sintony text-[0.9rem]
+    }
+}
+

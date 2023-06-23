@@ -1,1 +1,10 @@
-
+.about-heading {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background: #555;
+    vertical-align: top;
+    margin-top: 31px;
+    margin-right: 10px;
+}

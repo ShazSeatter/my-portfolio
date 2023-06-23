@@ -1,16 +1,11 @@
 import React, {useState} from "react";
 
 import './Navbar.css';
-import {AiOutlineMenu, AiOutlineHome, AiOutlineMail} from 'react-icons/ai';
+import {AiOutlineMenu} from 'react-icons/ai';
 import { CgClose } from "react-icons/cg";
-import {BsPerson} from 'react-icons/bs';
-import {GrAppsRounded} from 'react-icons/gr';
-import { DiCodeBadge } from "react-icons/di";
 
-
-import logo_2 from '../assets/logo_2.png'
 import Logo_1 from '../assets/Logo_1.png'
-import { Link } from "@mui/material";
+
 
 
 
