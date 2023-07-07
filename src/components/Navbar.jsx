@@ -17,9 +17,9 @@ const Navbar = () => {
 
     const Links = [
         {name: "Home", href: "#"},
-        {name: "About", href: "#"},
-        {name: "Skills", href: "#"},
-        {name: "Project", href: "#"},
+        {name: "About", href: "#about-me"},
+        {name: "Skills", href: "#skills"},
+        {name: "Project", href: "#projects"},
         {name: "Contact", href: "#"},
     ];
 
@@ -31,12 +31,12 @@ const Navbar = () => {
                     <img className="h-20 w-20 hover:cursor-pointer" src={Logo_1} alt="Porfolio Logo" />
                 </div>
                 <div onClick={() => setOpen(!open)} className="md:hidden cursor-pointer p-3 m-4 z-20">
-                    {open ? <CgClose className="h-6 w-6 "/> : <AiOutlineMenu className="h-6 w-6"/> }
+                    {open ? <CgClose className="h-6 w-6"/> : <AiOutlineMenu className="h-6 w-6"/> }
                 </div>
                     <ul className={`bg-[#ffffff14] backdrop-blur-md  md:flex md:static md:pr-12 pr-28 fixed duration-500 ease-linear top-0 md:h-auto h-screen z-10 ${!open ? 'right-[-100%] ' : 'right-0'}`}>
                         {Links.map((link, index) => (
                             <li key={index} className="ml-7 my-7 mr-7">
-                                <a href={link.href} className="font-Sintony"><span>{link.name}</span></a>
+                                <a href={link.href} className="font-Sintony scroll-smooth"><span>{link.name}</span></a>
                             </li>))
                         }
                     </ul>

@@ -27,7 +27,31 @@ body {
     }
     .project-description {
         @apply
-        mt-7 font-Sintony text-[0.9rem]
+        mt-7 font-Sintony text-[1rem]/[2rem]
     }
+    .contact-form {
+        @apply
+        border-black border w-full h-12 mb-5 rounded
+    }
+    .contact-font {
+        @apply
+        text-[1.2rem] font-Sintony mb-2
+    }
+
+    .md-screen-img {
+        @apply
+        md:w-6/12 md:h-3/6
+    }
+
+    .md-margin {
+        @apply
+        md:my-12 md:ml-9
+    }
+
+    .md-margin-left {
+        @apply 
+        md:mt-4
+    }
+
 }
 
