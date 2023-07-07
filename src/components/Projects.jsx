@@ -23,7 +23,7 @@ const Projects = () => {
             <h3 className="section-headers"><span className="about-heading"></span>Projects</h3>
             {/* book bucket list */}
             <div className="md:flex md:mb-14 md:mt-3" data-aos="zoom-out" data-aos-duration="900">
-                <img src={pythonProject} alt="Python Project Screenshot" className="my-12 rounded-md md-screen-img"/>
+                <img src={pythonProject} alt="Python Project Screenshot" className="my-12 rounded-md md-screen-img drop-shadow-lg"/>
                 <div className="flex flex-wrap md-margin">
                     <div>
                         <h4 className="project-title">Book Bucket List</h4>

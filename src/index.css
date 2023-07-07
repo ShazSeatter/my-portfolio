@@ -53,5 +53,16 @@ body {
         md:mt-4
     }
 
+    .md-skills-img {
+        @apply
+        md:mr-9 md:ml-9
+    }
+
+    .lg-skills-img {
+        @apply
+        lg:mr-9 lg:ml-9
+    }
+
+
 }
 
