@@ -19,13 +19,12 @@ const Navbar = () => {
     const Links = [
         {name: "Home", href: "#"},
         {name: "About", href: "#about-me"},
-        {name: "Skills", href: "#skills"},
         {name: "Project", href: "#projects"},
+        {name: "Skills", href: "#skills"},
         {name: "Contact", href: "#contact"},
     ];
 
     const handleNavClick = (e) => {
-        e.preventDefault()
         setOpen(!open)
     }
     return (
