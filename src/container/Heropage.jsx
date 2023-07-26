@@ -30,7 +30,7 @@ const Heropage = () => {
             </div>
             </div>
         <About /> */}
-        <header className="md:container text-center">
+        <header className="md:container text-center h-screen">
             <div>
             <h1 className="md:text-[3.5rem]/[4.5rem] md:mt-32 mt-28 text-[2.8rem] font-Gloock" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
               Shazreen Seatter

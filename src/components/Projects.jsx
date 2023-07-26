@@ -23,7 +23,7 @@ const Projects = () => {
             <h3 className="section-headers"><span className="about-heading"></span>Projects</h3>
             {/* book bucket list */}
             <div className="md:flex md:mb-14 md:mt-3" data-aos="zoom-out" data-aos-duration="900">
-                <img src={pythonProject} alt="Python Project Screenshot" className="my-12 rounded-md md-screen-img drop-shadow-lg"/>
+                <img src={pythonProject} alt="Python Project Screenshot" className="my-12 rounded-md md-screen-img drop-shadow-lg cursor-pointer" onClick={() => window.open("https://github.com/ShazSeatter/Book_Bucket_List", "_blank")}/>
                 <div className="flex flex-wrap md-margin">
                     <div>
                         <h4 className="project-title">Book Bucket List</h4>
@@ -37,21 +37,21 @@ const Projects = () => {
             </div>
             {/* mind blank */}
             <div className="md:flex md:mb-14" data-aos="zoom-out" data-aos-duration="900">
-                <img src={jsProject} alt="Javascript Project Screenshot" className="mt-14 rounded-md my-12 md-screen-img"/>
-                <div className="flex flex-wrap md-margin">
-                    <div>
-                        <h4 className="project-title">Mind Blank!</h4>
-                        <p className="project-description md-margin-left">Ignite your passion for trivia and unleash your inner quiz aficionado with "Mind Blank" - the ultimate trivia game app that will challenge your knowledge, entertain your senses, and keep you coming back for more! Dive into a world of captivating categories, challenging levels, and experience the thrill of victory as you try beat your highscore! This app has been built with React.js, Express, MongoDB and Node js. </p>
+               <img src={jsProject} alt="Javascript Project Screenshot" className="mt-14 rounded-md my-12 md-screen-img cursor-pointer" onClick={() => window.open("https://github.com/ShazSeatter/Mind_Blank", "_blank")}/>
+                    <div className="flex flex-wrap md-margin">
+                        <div>
+                            <h4 className="project-title">Mind Blank!</h4>
+                            <p className="project-description md-margin-left">Ignite your passion for trivia and unleash your inner quiz aficionado with "Mind Blank" - the ultimate trivia game app that will challenge your knowledge, entertain your senses, and keep you coming back for more! Dive into a world of captivating categories, challenging levels, and experience the thrill of victory as you try beat your highscore! This app has been built with React.js, Express, MongoDB and Node js. </p>
+                        </div>
+                        <div className="mt-8 flex md-margin-left">
+                            <a href="https://github.com/ShazSeatter/Mind_Blank" target="_blank"><AiFillGithub className="link-btn mr-12"/></a>
+                            <a href="https://youtu.be/a67F0SbpY6g" target="_blank"><AiFillYoutube className="link-btn"/></a>
+                        </div>
                     </div>
-                    <div className="mt-8 flex md-margin-left">
-                        <a href="https://github.com/ShazSeatter/Mind_Blank" target="_blank"><AiFillGithub className="link-btn mr-12"/></a>
-                        <a href="https://youtu.be/a67F0SbpY6g" target="_blank"><AiFillYoutube className="link-btn"/></a>
-                    </div>
-                </div>
             </div>
             {/* great escapse */}
             <div className="md:flex" data-aos="zoom-out" data-aos-duration="900">
-                <img src={unityProject} alt="Unity Project Screenshot" className="mt-14 rounded-md my-12 md-screen-img"/>
+                <img src={unityProject} alt="Unity Project Screenshot" className="mt-14 rounded-md my-12 md-screen-img cursor-pointer" onClick={() => window.open("https://github.com/ShazSeatter/The_Great_Escape", "_blank")}/>
                 <div className="flex flex-wrap md-margin">
                     <div>
                         <h4 className="project-title">The Great Escape</h4>

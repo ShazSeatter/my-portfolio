@@ -9,6 +9,7 @@ import Logo_1 from '../assets/Logo_1.png'
 
 
 
+
 const Navbar = () => {
 
     const [open, setOpen] = useState(false);
@@ -20,17 +21,21 @@ const Navbar = () => {
         {name: "About", href: "#about-me"},
         {name: "Skills", href: "#skills"},
         {name: "Project", href: "#projects"},
-        {name: "Contact", href: "#"},
+        {name: "Contact", href: "#contact"},
     ];
 
+    const handleNavClick = (e) => {
+        e.preventDefault()
+        setOpen(!open)
+    }
     return (
         <>
-        <nav className="max-w-full">
+        <nav className="max-w-full sticky top-0 bg-opacity-1 z-10">
             <div className="flex justify-between">
                 <div>
                     <img className="h-20 w-20 hover:cursor-pointer" src={Logo_1} alt="Porfolio Logo" />
                 </div>
-                <div onClick={() => setOpen(!open)} className="md:hidden cursor-pointer p-3 m-4 z-20">
+                <div onClick={handleNavClick} className="md:hidden cursor-pointer p-3 m-4 z-20">
                     {open ? <CgClose className="h-6 w-6"/> : <AiOutlineMenu className="h-6 w-6"/> }
                 </div>
                     <ul className={`bg-[#ffffff14] backdrop-blur-md  md:flex md:static md:pr-12 pr-28 fixed duration-500 ease-linear top-0 md:h-auto h-screen z-10 ${!open ? 'right-[-100%] ' : 'right-0'}`}>

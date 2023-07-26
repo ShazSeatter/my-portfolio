@@ -13,10 +13,10 @@ function App() {
 
   return (
     <>
-    <section className="h-screen">
+
         <Navbar />
         <Heropage />
-    </section>
+
     <section>
         <About />
     </section>
