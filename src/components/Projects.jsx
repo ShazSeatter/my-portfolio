@@ -3,6 +3,7 @@ import {AiFillGithub, AiFillYoutube} from 'react-icons/ai';
 import pythonProject from '../assets/python_project.png';
 import jsProject from '../assets/js_project.png';
 import unityProject from '../assets/unity_project.png';
+import snakeProject from '../assets/snake_project.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -63,7 +64,20 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-
+            {/* snake game */}
+            <div className="md:flex" data-aos="zoom-out" data-aos-duration="900">
+                <img src={snakeProject} alt="Snake Game Project Screenshot" className="mt-14 rounded-md my-12 md-screen-img cursor-pointer" onClick={() => window.open("https://github.com/ShazSeatter/The_Great_Escape", "_blank")}/>
+                <div className="flex flex-wrap md-margin">
+                    <div>
+                        <h4 className="project-title">Classic Snake</h4>
+                        <p className="project-description md-margin-left">Can't go wrong with a classic game of Snake. Feel nostalgic with this classic game and try to build the biggest snake you can! This game was built with Java experimenting with the awt library and swing graphics library. </p>
+                    </div>
+                    <div className="mt-8 flex md-margin-left">
+                        <a href="https://github.com/ShazSeatter/Snake_game" target="_blank"><AiFillGithub className="link-btn mr-12"/></a>
+                        <a href="https://youtu.be/TzErO0qTrOA" target="_blank"><AiFillYoutube className="link-btn"/></a>
+                    </div>
+                </div>
+            </div>
         </div>
         </>
     )

@@ -24,7 +24,7 @@ const Navbar = () => {
         {name: "Contact", href: "#contact"},
     ];
 
-    const handleNavClick = (e) => {
+    const handleNavClick = () => {
         setOpen(!open)
     }
     return (
